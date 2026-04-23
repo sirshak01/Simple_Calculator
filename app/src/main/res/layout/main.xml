@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0F0F0F">
+
+    <!-- TOP BAR -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:layout_marginBottom="5dp">
+    </RelativeLayout>
+
+    <!-- DISPLAY -->
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="42sp"
+        android:gravity="end|bottom"
+        android:padding="20dp" />
+
+    <!-- BUTTON GRID -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:columnCount="4"
+        android:useDefaultMargins="true">
+
+        <!-- ROW 1 -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="C"
+            android:textSize="18sp"
+            android:textColor="#FF6B6B"
+            android:background="#1E1E1E"
+            android:onClick="onClearClick"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="("
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="#1E1E1E"
+            android:onClick="onOpenBracket"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text=")"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="#1E1E1E"
+            android:onClick="onCloseBracket"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="โซ"
+            android:textSize="18sp"
+            android:textColor="#FFA726"
+            android:background="#1E1E1E"
+            android:onClick="onBackspaceClick"/>
+
+        <!-- ROW 2 -->
+        <Button style="@android:style/Widget.Button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="7"
+            android:textSize="20sp"
+            android:background="#2A2A2A"
+            android:textColor="#FFFFFF"
+            android:onClick="onNumberClick"/>
+
+        <Button style="@android:style/Widget.Button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="8"
+            android:textSize="20sp"
+            android:background="#2A2A2A"
+            android:textColor="#FFFFFF"
+            android:onClick="onNumberClick"/>
+
+        <Button style="@android:style/Widget.Button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="9"
+            android:textSize="20sp"
+            android:background="#2A2A2A"
+            android:textColor="#FFFFFF"
+            android:onClick="onNumberClick"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="รท"
+            android:textSize="20sp"
+            android:background="#FF9500"
+            android:textColor="#FFFFFF"
+            android:onClick="onOperatorClick"/>
+
+        <!-- ROW 3 -->
+        <Button android:layout_width="0dp" android:layout_height="0dp"
+            android:layout_rowWeight="1" android:layout_columnWeight="1"
+            android:text="4" android:textSize="20sp"
+            android:background="#2A2A2A" android:textColor="#FFFFFF"
+            android:onClick="onNumberClick"/>
+
+        <Button android:layout_width="0dp" android:layout_height="0dp"
+            android:layout_rowWeight="1" android:layout_columnWeight="1"
+            android:text="5" android:textSize="20sp"
+            android:background="#2A2A2A" android:textColor="#FFFFFF"
+            android:onClick="onNumberClick"/>
+
+        <Button android:layout_width="0dp" android:layout_height="0dp"
+            android:layout_rowWeight="1" android:layout_columnWeight="1"
+            android:text="6" android:textSize="20sp"
+            android:background="#2A2A2A" android:textColor="#FFFFFF"
+            android:onClick="onNumberClick"/>
+
+        <Button android:layout_width="0dp" android:layout_height="0dp"
+            android:layout_rowWeight="1" android:layout_columnWeight="1"
+            android:text="ร—"
+            android:textSize="20sp"
+            android:background="#FF9500"
+            android:textColor="#FFFFFF"
+            android:onClick="onOperatorClick"/>
+
+        <!-- ROW 4 -->
+        <Button android:layout_width="0dp" android:layout_height="0dp"
+            android:layout_rowWeight="1" android:layout_columnWeight="1"
+            android:text="1" android:textSize="20sp"
+            android:background="#2A2A2A" android:textColor="#FFFFFF"
+            android:onClick="onNumberClick"/>
+
+        <Button android:layout_width="0dp" android:layout_height="0dp"
+            android:layout_rowWeight="1" android:layout_columnWeight="1"
+            android:text="2" android:textSize="20sp"
+            android:background="#2A2A2A" android:textColor="#FFFFFF"
+            android:onClick="onNumberClick"/>
+
+        <Button android:layout_width="0dp" android:layout_height="0dp"
+            android:layout_rowWeight="1" android:layout_columnWeight="1"
+            android:text="3" android:textSize="20sp"
+            android:background="#2A2A2A" android:textColor="#FFFFFF"
+            android:onClick="onNumberClick"/>
+
+        <Button android:layout_width="0dp" android:layout_height="0dp"
+            android:layout_rowWeight="1" android:layout_columnWeight="1"
+            android:text="-"
+            android:textSize="20sp"
+            android:background="#FF9500"
+            android:textColor="#FFFFFF"
+            android:onClick="onOperatorClick"/>
+
+        <!-- ROW 5 -->
+        <Button android:layout_width="0dp" android:layout_height="0dp"
+            android:layout_rowWeight="1" android:layout_columnWeight="1"
+            android:text="0" android:textSize="20sp"
+            android:background="#2A2A2A" android:textColor="#FFFFFF"
+            android:onClick="onNumberClick"/>
+
+        <Button android:layout_width="0dp" android:layout_height="0dp"
+            android:layout_rowWeight="1" android:layout_columnWeight="1"
+            android:text="."
+            android:textSize="20sp"
+            android:background="#2A2A2A" android:textColor="#FFFFFF"
+            android:onClick="onNumberClick"/>
+
+        <Button android:layout_width="0dp" android:layout_height="0dp"
+            android:layout_rowWeight="1" android:layout_columnWeight="1"
+            android:text="="
+            android:textSize="20sp"
+            android:background="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:onClick="onEqualClick"/>
+
+        <Button android:layout_width="0dp" android:layout_height="0dp"
+            android:layout_rowWeight="1" android:layout_columnWeight="1"
+            android:text="+"
+            android:textSize="20sp"
+            android:background="#FF9500"
+            android:textColor="#FFFFFF"
+            android:onClick="onOperatorClick"/>
+
+    </GridLayout>
+
+</LinearLayout>
